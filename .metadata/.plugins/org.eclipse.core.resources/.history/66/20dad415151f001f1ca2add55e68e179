@@ -1,0 +1,13 @@
+package com.techlabs.test;
+
+import com.techlabs.model.Account;
+
+public class TestAccount {
+
+	public static void main(String[] args) {
+		
+		Account account1=new Account("Deepak","1234",5000);
+
+	}
+
+}

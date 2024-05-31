@@ -1,0 +1,14 @@
+package com.techlabs.test;
+
+import com.techlabs.model.InputValidator;
+
+public class TestInputValidator {
+
+	public static void main(String[] args) {
+		InputValidator inputValidator=new InputValidator();
+		
+		inputValidator.setEmail("fjkrv");
+
+	}
+
+}
