@@ -4,12 +4,16 @@
 <fullyQualifiedTypeName name="com.techlabs.model.Point"/>
 <fullyQualifiedTypeName name="com.techlabs.model.Student"/>
 <fullyQualifiedTypeName name="com.techlabs.model.Employee"/>
-<fullyQualifiedTypeName name="com.techlabs.model.Rectangle"/>
 <fullyQualifiedTypeName name="com.techlabs.model.Complex"/>
 <fullyQualifiedTypeName name="com.techlabs.model.AccountType"/>
 <fullyQualifiedTypeName name="com.techlabs.model.InputValidator"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.techlabs.model.StaticDemo"/>
 <fullyQualifiedTypeName name="com.techlabs.model.Account"/>
 <fullyQualifiedTypeName name="com.techlabs.model.BoxWeight"/>
+<fullyQualifiedTypeName name="com.techlabs.model.SavingAccount"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Car"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.techlabs.model.CurrentAccount"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Circle"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Rectangle"/>
 </qualifiedTypeNameHistroy>
