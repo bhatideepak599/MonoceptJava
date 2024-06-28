@@ -1,9 +1,12 @@
 package com.techlabs.test;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import com.techlabs.model.Movie;
+import com.techlabs.model.MovieSerialization;
 
 public class TestMovie {
 
@@ -11,7 +14,7 @@ public class TestMovie {
 		Movie[] movies=new Movie[5];
 		Scanner scanner=new Scanner(System.in);
 		
-		for(int i=0;i<5;i++) {
+		for(int i=0;i<1;i++) {
 			
 				System.out.println("Enter Details of Movie"+(i+1)+":");
 			 	System.out.print("Enter movie ID: ");
@@ -27,7 +30,7 @@ public class TestMovie {
 		        System.out.print("Enter year: ");
 		        int year = scanner.nextInt();
 		        scanner.nextLine();
-		        movies[i]=new Movie(id,name,genre,year);
+		        movies[i]=(new Movie(id,name,genre,year));
 			 	}
 			 	catch (Exception e) {
 			 		System.out.println("Id and Year must be a numerical value");
@@ -35,14 +38,14 @@ public class TestMovie {
 		}
 		
 		try {
-			Movie.saveMovies(movies);
+			MovieSerialization.saveMovies(movies);
 		} catch (IOException e) {
 			
 			System.out.println(e.getMessage());
 		}
 		
 		try {
-			Movie[] moviesDes=Movie.loadMovies();
+			Movie[] moviesDes=MovieSerialization.loadMovies();
 			for(Movie movie:moviesDes) {
 				System.out.println(movie);
 			}

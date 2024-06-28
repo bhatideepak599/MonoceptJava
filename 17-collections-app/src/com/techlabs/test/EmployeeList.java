@@ -1,12 +1,12 @@
 package com.techlabs.test;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Collections;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Scanner;
 
 import com.techlabs.model.Employee;
+import com.techlabs.model.EmployeeComparator;
 
 public class EmployeeList {
 
@@ -32,28 +32,30 @@ public class EmployeeList {
 			employees.add(new Employee(id, name, salary));
 		}
 		
-		for(int i=0;i<size;i++) {
-			System.out.println(employees.get(i));
-		}
-		System.out.println("2nd way");
-		Iterator employeeIterator=employees.iterator();
-		while(employeeIterator.hasNext()) {
-			System.out.println(employeeIterator.next());
-		}
+//		for(int i=0;i<size;i++) {
+//			System.out.println(employees.get(i));
+//		}
+//		System.out.println("2nd way");
+//		Iterator employeeIterator=employees.iterator();
+//		while(employeeIterator.hasNext()) {
+//			System.out.println(employeeIterator.next());
+//		}
+//		
+//		ListIterator lstItr=employees.listIterator();
+//		System.out.println("3rd way");
+//		
+//		while(lstItr.hasNext()) {
+//			System.out.println(lstItr.next());
+//		}//		while(lstItr.hasPrevious()) {
+//			System.out.println(lstItr.previous());
+//		}
 		
-		ListIterator lstItr=employees.listIterator();
-		System.out.println("3rd way");
-		
-		while(lstItr.hasNext()) {
-			System.out.println(lstItr.next());
-		}
-		while(lstItr.hasPrevious()) {
-			System.out.println(lstItr.previous());
-		}
+		Collections.sort(employees,new EmployeeComparator.EmpolyeeByName());
 		
 		
-		
-		//System.out.println(employees);
+		System.out.println(employees);
+		Collections.sort(employees,new EmployeeComparator.EmployeeBySalary());
+		System.out.println(employees);
 	}
 
 }

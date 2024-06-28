@@ -6,4 +6,18 @@
 <typeInfo handle="=smart_home_management_system-app/src&lt;com.techlabs.interfaces{SmartDevice.java[SmartDevice" modifiers="513" timestamp="1717603495229"/>
 <typeInfo handle="=movie-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1715064150749"/>
 <typeInfo handle="=movie-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.lang(Exception.class[Exception" modifiers="33" timestamp="1715064150749"/>
+<typeInfo handle="=17-collections-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.util(Comparator.class[Comparator" modifiers="1537" timestamp="1715064150749"/>
+<typeInfo handle="=18-multithreading-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1715064150749"/>
+<typeInfo handle="=18-multithreading-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.util.concurrent(Callable.class[Callable" modifiers="1537" timestamp="1715064150749"/>
+<typeInfo handle="=19-lamdas-app/src&lt;com.techlabs.model{MediaPlayer.java[MediaPlayer" modifiers="513" timestamp="1718778776552"/>
+<typeInfo handle="=21-solid-app/src&lt;com.techlabs.isp.violation{IWorker.java[IWorker" modifiers="513" timestamp="1719294529943"/>
+<typeInfo handle="=21-solid-app/src&lt;com.techlabs.isp.solution{IWorker.java[IWorker" modifiers="513" timestamp="1719295969223"/>
+<typeInfo handle="=21-solid-app/src&lt;com.techlabs.isp.solution{Ilabour.java[Ilabour" modifiers="513" timestamp="1719295712068"/>
+<typeInfo handle="=21-solid-app/src&lt;com.techlabs.dip.solution{ILogger.java[ILogger" modifiers="513" timestamp="1719298351020"/>
+<typeInfo handle="=22-design-principles-app/src&lt;com.techlabs.creational.factory.model{ICar.java[ICar" modifiers="513" timestamp="1719469482172"/>
+<typeInfo handle="=22-design-principles-app/src&lt;com.techlabs.creational.factory.model{IAccount.java[IAccount" modifiers="513" timestamp="1719471422703"/>
+<typeInfo handle="=22-design-principles-app/src&lt;com.techlabs.abstractfactory.model{ICars.java[ICars" modifiers="513" timestamp="1719552234037"/>
+<typeInfo handle="=22-design-principles-app/src&lt;com.techlabs.abstractfactory.model{ICarFactory.java[ICarFactory" modifiers="513" timestamp="1719553097082"/>
+<typeInfo handle="=22-design-principles-app/src&lt;com.techlabs.structural.facade.model{IHotel.java[IHotel" modifiers="513" timestamp="1719556011994"/>
+<typeInfo handle="=22-design-principles-app/src&lt;com.techlabs.structural.adapter.model{IItems.java[IItems" modifiers="513" timestamp="1719558414816"/>
 </typeInfoHistroy>
