@@ -1,8 +1,6 @@
 package com.techlabs.test;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 import com.techlabs.exception.CapacityFullException;
@@ -13,65 +11,66 @@ import com.techlabs.model.MovieApp;
 public class MovieAppTest {
 
 	public static void main(String[] args)   {
-		int choice;
-		MovieApp movieApp;
-		try {
-			movieApp = new MovieApp();
-			Scanner scanner=new Scanner(System.in);
-			do {
-				MovieApp.displayMenu();
-				choice=scanner.nextInt();
-				
-				switch (choice) {
-			    
-				case 1:
-			        movieApp.displayMovies();
-			        break;
-			    
-				case 2:
-			    	try {
-						movieApp.addMovie();
-						
-					} 
-			    	catch (CapacityFullException e) {
-						System.out.println(e.getMessage());
-					}
-			        break;
-			    
-				case 3:
-			    	try {
-			    		System.out.print("Enter the Movie id:");
-			        	int id=scanner.nextInt();
-						movieApp.displayMovie(id);
-					} 
-			    	catch (NoSuchMovieFoundException e1) {
-						System.out.println(e1.getMessage());
-					}
-			        break;
-			        
-			    case 4:
-			        System.out.println("Exiting...");
-			        scanner.close();
-			        break;
-			    default:
-			        System.out.println("Invalid choice. Please try again.");
-			}
-	   
-			}
-			while(choice!=4);
-		} catch (ClassNotFoundException e2) {
-			// TODO Auto-generated catch block
-			e2.printStackTrace();
-		} catch (IOException e2) {
-			// TODO Auto-generated catch block
-			e2.printStackTrace();
-		}
-		
-		
-		
-		
-		
+		 try {
+             MovieApp simplemoviesapp = new MovieApp();
+             Scanner scanner = new Scanner(System.in);
+             while (true) {
+                 System.out.println("\n1. Display movies");
+                 System.out.println("2. Add movie");
+                 System.out.println("3. Display a movie");
+                 System.out.println("4. Exit");
+                 System.out.print("Enter your choice: ");
+                 int choice = scanner.nextInt();
+                 scanner.nextLine(); 
 
+                 if (choice == 1) {
+                  simplemoviesapp.displayMovies();
+                     continue;
+                 }
+                 if (choice == 2) {
+                     try {
+                         System.out.print("Enter movie ID: ");
+                         int movieId = scanner.nextInt();
+                         scanner.nextLine(); 
+                         System.out.print("Enter movie name: ");
+                         String name = scanner.nextLine();
+                         System.out.print("Enter movie genre: ");
+                         String genre = scanner.nextLine();
+                         System.out.print("Enter movie year: ");
+                         int year = scanner.nextInt();
+                         scanner.nextLine(); 
+                         Movie movie = new Movie(movieId, name, genre, year);
+                         simplemoviesapp.addMovie(movie);
+                         System.out.println("Movie added successfully.");
+                                              } catch (CapacityFullException e) {
+                         System.out.println(e.getMessage());
+                     }
+                     continue;
+                 }
+                 if (choice == 3) {
+                     try {
+                         System.out.print("Enter movie ID to display: ");
+                         int movieId = scanner.nextInt();
+                         scanner.nextLine(); 
+                         simplemoviesapp.displayMovie(movieId);
+                     } catch (NoSuchMovieFoundException e) {
+                         System.out.println(e.getMessage());
+                     }
+                     continue;
+                 }
+                 if (choice == 4) {
+                  System.out.println("ThankYou");
+                  scanner.close();
+                  
+                     System.exit(0);
+                     break;
+                 }
+                 System.out.println("Invalid choice. Please try again.");
+             }
+             scanner.close();
+         } catch (IOException  e) {
+             e.printStackTrace();
+         }
 	}
 
 }

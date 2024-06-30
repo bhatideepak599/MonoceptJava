@@ -1,29 +1,49 @@
 package com.techlabs.model;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class MovieSerialization {
-	private static final String fileName= "movies.txt"; 
+	public static void saveMovies(Movie[] movies, String filename) throws IOException {
+		FileOutputStream fileOutputStream;
+		try {
+			fileOutputStream = new FileOutputStream(filename);
+			ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+			objectOutputStream.writeObject(movies);
 
-	  public static void saveMovies(Movie[] movies) throws IOException {
-	    FileOutputStream fileOut = new FileOutputStream(fileName);
-	    ObjectOutputStream out = new ObjectOutputStream(fileOut);
-	    out.writeObject(movies);
-	    out.close();
-	    fileOut.close();
-	  }
+			objectOutputStream.close();
+			fileOutputStream.close();
 
-	  public static Movie[] loadMovies() throws IOException, ClassNotFoundException {
-	    FileInputStream fileIn = new FileInputStream(fileName);
-	    ObjectInputStream in = new ObjectInputStream(fileIn);
-	     
-	    in.close();
-	    fileIn.close();
-	    return (Movie[] ) in.readObject();
-	  }
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    }
 
+    public static Movie[] loadMovies(String filename) throws IOException, ClassNotFoundException {
+    	FileInputStream fileInputStream;
+    	Movie[] movies=null;
+		try {
+			fileInputStream = new FileInputStream(filename);
+			ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+			//return
+			movies=(Movie[]) objectInputStream.readObject();
+
+			
+
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		return movies;
+}
 }
