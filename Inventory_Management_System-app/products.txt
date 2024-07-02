@@ -1,1 +1,1 @@
-,wdfg,sdfg,1,200.0
+-596765653,laptop,windows,5,50000.0

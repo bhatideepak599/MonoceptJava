@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -19,7 +20,7 @@ public class Inventory implements ProductManagement, SupplierManagement, Transac
 	private Map<String, Product> products = new HashMap<>();
     private Map<String, Supplier> suppliers = new HashMap<>();
     private List<Transaction> transactions = new ArrayList<>();
-    private Lock lock = new ReentrantLock();
+    
 
     @Override
     public void addProduct(Product product) {
@@ -73,26 +74,25 @@ public class Inventory implements ProductManagement, SupplierManagement, Transac
         return new ArrayList<>(suppliers.values());
     }
 
-    // Transaction management methods...
 
     @Override
     public void addStock(String productId, int quantity) throws InvalidProductException {
-        lock.lock();
+        
         try {
             Product product = products.get(productId);
             if (product == null) {
                 throw new InvalidProductException("Product not found: " + productId);
             }
             product.setQuantity(product.getQuantity() + quantity);
-            transactions.add(new Transaction(UUID.randomUUID().toString(), productId, "add", quantity, new Date()));
+            transactions.add(new Transaction(Integer.toString(Math.abs(new Random().nextInt())), productId, "add", quantity, new Date()));
         } finally {
-            lock.unlock();
+            
         }
     }
 
     @Override
     public void removeStock(String productId, int quantity) throws InsufficientStockException, InvalidProductException {
-        lock.lock();
+        
         try {
             Product product = products.get(productId);
             if (product == null) {
@@ -102,9 +102,9 @@ public class Inventory implements ProductManagement, SupplierManagement, Transac
                 throw new InsufficientStockException("Insufficient stock for product: " + productId);
             }
             product.setQuantity(product.getQuantity() - quantity);
-            transactions.add(new Transaction(UUID.randomUUID().toString(), productId, "remove", quantity, new Date()));
+            transactions.add(new Transaction(Integer.toString(Math.abs(new Random().nextInt())), productId, "remove", quantity, new Date()));
         } finally {
-            lock.unlock();
+            
         }
     }
 
