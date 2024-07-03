@@ -1,9 +1,9 @@
-package com.techlabs.behavioural.observer.test;
+package com.techlabs.behavioural.stratgy.test;
 
-import com.techlabs.behavioural.observer.AddOperation;
-import com.techlabs.behavioural.observer.IOperation;
-import com.techlabs.behavioural.observer.MultiplyOperation;
-import com.techlabs.behavioural.observer.OperationalStratgy;
+import com.techlabs.behavioural.stratgy.model.AddOperation;
+import com.techlabs.behavioural.stratgy.model.IOperation;
+import com.techlabs.behavioural.stratgy.model.MultiplyOperation;
+import com.techlabs.behavioural.stratgy.model.OperationalStratgy;
 
 public class TestOperation {
 

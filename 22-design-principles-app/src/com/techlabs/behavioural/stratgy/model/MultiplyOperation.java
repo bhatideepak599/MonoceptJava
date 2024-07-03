@@ -1,4 +1,4 @@
-package com.techlabs.behavioural.observer;
+package com.techlabs.behavioural.stratgy.model;
 
 public class MultiplyOperation implements IOperation {
 
