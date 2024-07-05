@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
-<fullyQualifiedTypeName name="java.util.TreeMap"/>
-<fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="java.util.Map.Entry"/>
-<fullyQualifiedTypeName name="java.util.Queue"/>
-<fullyQualifiedTypeName name="java.util.PriorityQueue"/>
-<fullyQualifiedTypeName name="java.util.ArrayDeque"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
-<fullyQualifiedTypeName name="java.util.Deque"/>
-<fullyQualifiedTypeName name="com.techlabs.model.EmployeeByName"/>
 <fullyQualifiedTypeName name="com.techlabs.model.EmployeeBySalary"/>
 <fullyQualifiedTypeName name="com.techlabs.model.EmployeeComparator.EmpolyeeByName"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
@@ -50,7 +40,6 @@
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="com.techlabs.structural.adapter.model.HatAdapter"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.techlabs.model.Supplier"/>
 <fullyQualifiedTypeName name="com.techlabs.custom_exception.FileHandler"/>
 <fullyQualifiedTypeName name="com.techlabs.model.IDGenerator"/>
@@ -60,4 +49,15 @@
 <fullyQualifiedTypeName name="com.techlabs.behavioural.observer.AddOperation"/>
 <fullyQualifiedTypeName name="com.techlabs.behavioural.observer.MultiplyOperation"/>
 <fullyQualifiedTypeName name="com.techlabs.behavioural.observer.OperationalStratgy"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.techlabs.composite.model.IEmployee"/>
+<fullyQualifiedTypeName name="com.techlabs.composite.model.Developer"/>
+<fullyQualifiedTypeName name="com.techlabs.composite.test.EmployeeDirectoryTest"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.techlabs.behavioural.observer.NotifierAlreadyPresent"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="com.techlabs.command.model.OnCommand"/>
+<fullyQualifiedTypeName name="com.techlabs.command.model.RemoteControl"/>
+<fullyQualifiedTypeName name="com.techlabs.command.model.ICommand"/>
+<fullyQualifiedTypeName name="com.techlabs.command.model.Television"/>
 </qualifiedTypeNameHistroy>

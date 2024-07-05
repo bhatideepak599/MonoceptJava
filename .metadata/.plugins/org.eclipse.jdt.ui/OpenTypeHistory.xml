@@ -5,7 +5,6 @@
 <typeInfo handle="=smart_home_management_system-app/src&lt;com.techlabs.interfaces{Monitorable.java[Monitorable" modifiers="513" timestamp="1717603633901"/>
 <typeInfo handle="=smart_home_management_system-app/src&lt;com.techlabs.interfaces{SmartDevice.java[SmartDevice" modifiers="513" timestamp="1717603495229"/>
 <typeInfo handle="=movie-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1715064150749"/>
-<typeInfo handle="=movie-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.lang(Exception.class[Exception" modifiers="33" timestamp="1715064150749"/>
 <typeInfo handle="=17-collections-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.util(Comparator.class[Comparator" modifiers="1537" timestamp="1715064150749"/>
 <typeInfo handle="=18-multithreading-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1715064150749"/>
 <typeInfo handle="=18-multithreading-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.util.concurrent(Callable.class[Callable" modifiers="1537" timestamp="1715064150749"/>
@@ -21,4 +20,7 @@
 <typeInfo handle="=22-design-principles-app/src&lt;com.techlabs.structural.facade.model{IHotel.java[IHotel" modifiers="513" timestamp="1719556011994"/>
 <typeInfo handle="=22-design-principles-app/src&lt;com.techlabs.structural.adapter.model{IItems.java[IItems" modifiers="513" timestamp="1719558414816"/>
 <typeInfo handle="=22-design-principles-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;org.omg.PortableInterceptor(InterceptorOperations.class[InterceptorOperations" modifiers="1537" timestamp="1715064150749"/>
+<typeInfo handle="=22-design-principles-app/src&lt;com.techlabs.composite.model{IEmployee.java[IEmployee" modifiers="513" timestamp="1719986410246"/>
+<typeInfo handle="=movie-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.lang(Exception.class[Exception" modifiers="33" timestamp="1715064150749"/>
+<typeInfo handle="=22-design-principles-app/src&lt;com.techlabs.command.model{ICommand.java[ICommand" modifiers="513" timestamp="1719992388188"/>
 </typeInfoHistroy>

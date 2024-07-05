@@ -68,9 +68,11 @@ public class Account {
 			}
 		}
 	}
-	public void registerUser(INotifier notifier) {
-		notifiers.add(notifier);
+	public void registerUser(INotifier notifier)  {
+		if(notifiers.contains(notifier) ) throw new NotifierAlreadyPresent();
+			notifiers.add(notifier);
 	}
+	
 
 
 	@Override
