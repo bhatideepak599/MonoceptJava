@@ -23,4 +23,5 @@
 <typeInfo handle="=22-design-principles-app/src&lt;com.techlabs.composite.model{IEmployee.java[IEmployee" modifiers="513" timestamp="1719986410246"/>
 <typeInfo handle="=movie-app/C:\/Program Files\/Java\/jre1.8.0_281\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.lang(Exception.class[Exception" modifiers="33" timestamp="1715064150749"/>
 <typeInfo handle="=22-design-principles-app/src&lt;com.techlabs.command.model{ICommand.java[ICommand" modifiers="513" timestamp="1719992388188"/>
+<typeInfo handle="=eviction_strategy-app/src&lt;com.techlabs.model{EvictionStrategy.java[EvictionStrategy" modifiers="513" timestamp="1720280381127"/>
 </typeInfoHistroy>
